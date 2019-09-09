@@ -1,0 +1,48 @@
+V = input("valance e : ")
+M = input("uni valent atom : ")
+C = input("Cationic charge : ")
+A = input("Anionic charge : ")
+bot = input("bi valent or tri valent atom total electron : ")
+Hybridization = (int(V) + int(M) - int(C) + int(A)) / 2
+print(Hybridization)
+
+Shape = (int(V) - int(M) - int(bot) + int(A))/2
+
+if Hybridization == 7 and Shape == 0:
+    print("Sp3d3- Pentagonal bipyramidal & geometry : same")
+
+elif Hybridization == 6 and Shape == 0:
+    print("Sp3d2-Octahedral & geometry : same")
+elif Hybridization == 6 and Shape == 1:
+    print("Sp3d2- Octahedral & geometry : squre pyramidal")
+elif Hybridization == 6 and Shape == 2:
+    print("Sp3d2- Octahedral & geometry : squre planner")
+
+
+elif Hybridization == 5 and Shape == 0:
+
+    print("Sp3d- Trigonal bipyramidal & Geometry : same")
+
+elif Hybridization == 5 and Shape == 1:
+    print("Sp3d- Trigonal bipyramidal & Geometry : Sea-saw")
+elif Hybridization== 5 and Shape ==2:
+    print("Sp3d- Trigonal bipyramidal & shape : T shape")
+elif Hybridization == 5 and Shape == 3:
+    print("Sp3d- Trigonal bipyramidal & shape : Linear")
+
+
+elif Hybridization == 4 and Shape == 0:
+    print("Sp3- Tetrahedral & Geometru : same")
+elif Hybridization == 4 and Shape == 1:
+    print("Sp3- Tetrahedral & Geometru : Distorted tetrahedral")
+elif Hybridization == 4 and Shape == 2:
+    print("Sp3- Tetrahedral & Geometru : V shape")
+
+elif Hybridization == 3 and Shape == 0:
+    print("Sp2- Planner & Geometry : same")
+elif Hybridization == 3 and Shape == 1:
+    print("Sp2- Planner & Geometry : V shape")
+
+
+elif Hybridization == 2 and Shape == 0:
+    print("Sp- Linear")
